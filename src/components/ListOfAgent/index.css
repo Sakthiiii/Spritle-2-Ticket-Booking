@@ -7,3 +7,132 @@
   .agent-heading {
     text-align: center;
   }
+
+  .li {
+    padding: 30px;
+    margin: 5px;
+    width: 500px;
+    height: 220px;
+    border: 2px solid;
+    background-color: rgba(53, 14, 70, 0.502);
+    border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  }
+  .list-container  {
+    display: flex;
+    justify-content:right;
+    align-items:flex-start;
+    flex-direction: column;
+    
+  }
+  .list-container p{
+    display: flex;
+    justify-content: right;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  
+  .pwd {
+    margin-top: 10px;
+  }
+  
+  .list-img .span{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 50px;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Lora';
+    padding: 5px;
+    margin-top: -15px;
+  
+  }
+  .list-img img{
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  }
+  .list-container p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+  .list-container .email{
+     font-weight: 600;
+     font-size: 20px;
+     display: flex;
+     align-items: flex-start;
+     flex-direction: column;
+     margin-left: 135px;
+     margin-top: -10px;
+     font-family: 'Lora';
+  }
+  .list-img .span2{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  
+  .buttons{
+    background-color: transparent;
+   border: none;
+   color: rgb(176, 35, 35);
+   font-size: 16px;
+   font-weight: 600;
+  margin-bottom: -20px;
+   margin: 1px 12px;
+   overflow: hidden;
+   padding: 6px 12px;
+   position: relative;
+   /* text-transform: uppercase; */
+   transition: .5s;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   
+  }
+  .buttons svg{
+    margin-left: 4px;
+  }
+  .buttons:before {
+  border-left: 4px solid #fff ;
+  border-top: 4px solid #fff ;
+  content: "";
+  height: 10px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 10px;
+  }
+  .buttons:after {
+  border-bottom: 4px solid #fff;
+  border-right: 4px solid #fff ;
+  bottom: 0;
+  content: "";
+  height: 10px;
+  position: absolute;
+  right: 0;
+  width: 10px;
+  }
+  .button:hover::after{
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+  }
+  .buttons:hover::before{
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+  }
+  .buttons:hover{
+  background: #fff;
+  color: #111;
+  box-shadow: 0 0 50px #21ebff;
+  }
+  .buttons:hover::after{
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+  }

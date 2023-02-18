@@ -29,34 +29,17 @@ const ViewArea = () => {
     if(add ==='' || name === ''|| email === ''|| password === ''||phone === ''|| dob==='') {
       toast("Please fill all the forms");
     }
-   else if (
-      name === name ||
-      password === reEnterpwd ||
-      email !== "" ||
-      password !== "" ||
-      reEnterpwd !== "" ||
-      dob !== "" ||
-      phone !== "" ||
-      add !== "" ||
-      img !== ""
+   else if ( name === name ||  password === reEnterpwd ||  email !== "" || password !== "" ||
+      reEnterpwd !== "" ||  dob !== "" ||  phone !== "" ||  add !== "" ||  img !== ""
     ) {
       let data = {
-        id: v4(),
-        Email: email,
-        Name: name,
-        Password: password,
-        Dob: dob,
-        Phone: phone,
-        Address: add,
-        Image: img,
+        id: v4(), Email: email, Name: name, Password: password, Dob: dob, Phone: phone,  Address: add, Image: img,
       };
+
       let formData = JSON.parse(localStorage.getItem("data")) || [];
       formData.push(data);
       localStorage.setItem("data", JSON.stringify(formData));
      
-      
-     
-      //localStorage.clear();
       setName(""); 
       setAdd("");
       setImg("");
