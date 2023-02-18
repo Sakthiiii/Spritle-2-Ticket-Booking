@@ -1,0 +1,210 @@
+.bookin-container {
+  display: flex;
+  width: 100%;
+}
+
+.passanger-form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.head-form-container {
+  width: 50%;
+  padding: 16px;
+}
+.passanger-form-inputs {
+  width: 300px;
+  height: 28px;
+  font-size: 16px;
+  color: #034846;
+  font-weight: 600;
+  outline: none;
+  margin-bottom: 8px;
+  border: 2px solid rgba(14, 130, 128, 0.692);
+ border-top-right-radius: 20px;
+ border-bottom-left-radius: 0px;
+}
+.label {
+  margin: 5px;
+  font-size: 20px;
+  font-family: "Montserrat";
+  font-weight: 550;
+  letter-spacing: 0.5px;
+  color: #0a8a84;
+  display: flex;
+  align-items: center;
+}
+.add-ticket-btn {
+  width: 90px;
+  height: 35px;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  background-color: rgb(81, 85, 112);
+  margin-top: 12px;
+  cursor: pointer;
+}
+.bottom-container {
+  width: 100%;
+
+}
+
+.ul-con {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}
+.li-container {
+  list-style: none;
+  width: 40%;
+  border: 2px solid #0b19b5;
+  padding: 25px;
+  margin: 10px;
+  border-top-right-radius: 50px;
+  border-bottom-left-radius: 50px;
+  margin-left: 2px;
+}
+.ticket-counter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Montserrat";
+  font-size: 16px;
+  font-weight: 600;
+}
+.ticket-counter span{
+  margin-right: 0px;
+  padding: 5px;
+  color: hsl(59, 94%, 18%);
+}
+.div-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ticket-counter  h4{
+ margin-left: px;
+
+}
+.desc {
+  margin-top: 0px;
+}
+.log-out-button-t{
+  position: relative;
+  display: inline-block;
+  padding: 5px 10px;
+  text-transform: uppercase;
+  color: rgba(255,255,255,0.4);
+  background: #262c37;
+  font-size: 15px;
+  width: 150px;
+  transition: 0.5s;
+  margin-left: 70px;
+  margin-top: 10px;
+  font-weight: 600;
+  cursor: pointer;
+ }
+ .log-out-button-t:hover{
+  color: rgba(255,255,255,1);
+  cursor: pointer;
+ }
+ .log-out-button-t span{
+  display: block;
+  position: absolute;
+  background: #2894ff;
+ }
+ .log-out-button-t span:nth-child(1){
+  left: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+ }
+ .log-out-button-t:hover span:nth-child(1){
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+ }
+ 
+ .log-out-button-t span:nth-child(2){
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+ }
+ .log-out-button-t:hover span:nth-child(2){
+  transform: scaleY(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+ }
+
+ .log-out-button-t span:nth-child(3){
+  right: 0;
+  bottom: 0;
+  width: 2px;
+  height: 100%;
+  transform: scaleY(0);
+  transform-origin: top;
+  transition: transform 0.5s;
+ }
+ .log-out-button-t:hover span:nth-child(3){
+  transform: scaleY(1);
+  transform-origin: bottom;
+  transition: transform 0.5s;
+ }
+
+ .log-out-button-t span:nth-child(4){
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 2px;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 0.5s;
+ }
+ .log-out-button-t:hover span:nth-child(4){
+  transform: scaleY(1);
+  transform-origin: left;
+  transition: transform 0.5s;
+ }
+  .li-container p{
+font-size: 16px;
+font-weight: 600;
+font-family: "Lora";
+ }
+ .li-container  .msg{
+  font-family: 'Lora';
+  color: #7e066a;
+ }
+ .close{
+  background-color: #0bb5af;
+  padding: 3px 8px;
+  font-size: 14px;
+  margin-top: 15px;
+  border: 2px solid #1095c1;
+  cursor: pointer;
+ }
+ .sprits{
+  margin-right: 690px;
+
+font-weight: 600;
+ font-size: 26px;
+ color: rgba(26, 5, 75, 0.548);
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ font-family: 'Lora';
+}
+ .sprits img{
+  height: 40px;
+  width: 80px;
+  margin-right: 10px;
+  background: transparent;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}

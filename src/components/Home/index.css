@@ -1,0 +1,51 @@
+.home {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(217, 196, 196, 0.349);
+}
+.button-container {
+ 
+  width: 85%;
+  padding: 62px;
+  background-color: white;
+  box-shadow: rgba(66, 215, 12, 0.774) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(14, 188, 11, 0.765) 0px 0px 0px 1px inset;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.card {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.heading {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Montserrat", "Helvetica Neue",;
+}
+
+.logo {
+  width: 300px;
+  height: 200px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  transition: 0.9s;
+}
+.logo:hover{
+  width: 350px;
+  height: 220px;
+transform: 20px;
+}
+.btn {
+  height: 23%;
+  width: 23%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}

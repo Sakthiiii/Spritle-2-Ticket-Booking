@@ -1,0 +1,142 @@
+
+.bodys{
+  background-color: lightgrey;
+  height: 86vh;
+}
+.agent-login-main-container {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.agent-login-sub-container {
+  width:45%;
+  padding: 45px;
+  margin: 30px;
+    background-image: linear-gradient(to right top, #da551b, #e67807, #ec9b00, #edbe00, #e9e022);
+
+  box-shadow: rgba(66, 215, 12, 0.774) 0px 12px 28px 0px,
+    rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
+    rgba(14, 188, 11, 0.765) 0px 0px 0px 1px inset;
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.login-heading {
+  font-family: "Montserrat",;
+  margin-left: 180px;
+  font-weight: 700;
+  color: rgb(3, 56, 69);
+}
+.agent-login-form {
+margin-left: 150px;
+  display: flex;
+  width: 45%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.agent-login-input {
+  width: 100%;
+  padding: 3px 8px;
+  margin: 5px;
+  height: 25px;
+  font-size: 16px;
+  outline: none;
+   /* border: 2px solid rgb(146, 153, 158);  */
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px ;
+  /* border-radius: 6px; */
+}
+
+.err {
+  font-family: "Courier New";
+  font-weight: bold;
+  color: rgb(253, 15, 15);
+  font-size: 14px;
+}
+.login-btn {
+  margin-top: 150px;
+ position: absolute;
+ /* top: 50%;
+ left: 50%;
+transform: translate(-50%, -50%); */
+padding: 10px 30px;
+border: 2px solid #262626;
+letter-spacing: 1px;
+text-transform: uppercase;
+color: #262626;
+box-sizing: border-box;
+transition: 0.5s;
+font-size: 16px;
+font-weight: 600;
+background-color:lightgrey;
+}
+
+.login-btn span:before,.login-btn span:after{
+content: '';
+position: absolute;
+display: flex;
+width: 30px;
+height: 30px;
+box-sizing: border-box;
+transition: 0.5s;
+
+}
+.login-btn span:before{
+  border-bottom: 2px solid #262626;
+  border-left: 2px solid #262626;
+  transform: rotate(45deg);
+  top: 3px;
+  left:-10px;
+
+}
+.login-btn:hover span:before{
+  left: -25px;
+  transform: rotate(-135deg);
+  animation: animateBefore .5s linear infinite;
+}
+
+.login-btn span:after{
+  border-top: 2px solid #262626;
+  border-right: 2px solid #262626;
+  transform: rotate(45deg);
+  top: 3px;
+  right:-10px;
+
+}
+.login-btn:hover span:after{
+  right:  -25px;
+  transform: rotate(-135deg);
+  animation: animateAfter .5s linear infinite;
+}
+.login-btn:hover{
+  border-radius: 20px;
+}
+
+@keyframes animateBefore
+{
+  0%{
+    left:-20px;
+  }
+  50%{
+    left: -25px;
+  }
+  100%{
+    left: -22px;
+  }
+}
+
+@keyframes animateAfter
+{
+  0%{
+    right: -20px;
+  }
+  50%{
+    right: -25px;
+  }
+  100%{
+    right: -22px;
+  }
+}

@@ -1,0 +1,67 @@
+.admin-container {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  width: 100%;
+  
+}
+
+.form-container {
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+  padding: 32px;
+  padding-top: 0px;
+}
+.input {
+  /* height: 55px; */
+  margin: 8px;
+  padding: 10px 20px;
+  outline: none;
+  width: 60%;
+  font-size: 15px;
+   color:rgb(16, 118, 219) ;
+  border: 2px solid ;
+  cursor: pointer;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-color: rgba(231, 11, 69, 0.55);
+}
+.hr{
+  color: gray;
+  border: 2px solid rgb(184, 189, 194);
+  margin-left: -190px;
+  height: 96%;
+}
+h1{
+  font-family: "Montserrat", "Helvet";
+  font-size: 25px;
+  font-weight: 600;
+}
+.bhr{
+  color: gray;
+  border: 2px solid rgb(184, 189, 194);
+  margin-right:30px;
+ 
+}
+.btns{
+  padding: 5px 10px;
+  margin: 10px;
+  width: 110px;
+  margin-bottom: 13px;
+  background-color: gray;
+  font-weight: 600;
+  font-size: 16px;
+  font-family: "Montserrat", "Helvetica Neue",;
+  margin-left:100px;
+  border: 1px solid rgba(109, 10, 10, 0.381);
+  transition: 1s;
+}
+.btns:hover{
+  transform: scale(1.1);
+  background-color: lightseagreen;
+  font-weight: 600;
+  width: 110px;
+  height: 50px;
+
+}
