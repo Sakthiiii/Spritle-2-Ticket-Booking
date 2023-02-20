@@ -18,10 +18,11 @@ const Login = () => {
     );
 
     if (LoginSuccess.length === 1) {
-   
-
-      navigate("/booking-page");
-    } else {
+         navigate("/booking-page")
+    }else if (email === "" ||password === ""){
+      toast("Please Fill the form");
+    } 
+    else  {
       toast("Invalid email OR password");
     }
   };
