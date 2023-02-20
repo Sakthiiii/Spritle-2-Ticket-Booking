@@ -47,7 +47,7 @@ h1{
 .btns{
   padding: 5px 10px;
   margin: 10px;
-  width: 110px;
+  width: 170px;
   margin-bottom: 13px;
   background-color: gray;
   font-weight: 600;
@@ -57,11 +57,11 @@ h1{
   border: 1px solid rgba(109, 10, 10, 0.381);
   transition: 1s;
 }
-.btns:hover{
+/* .btns:hover{
   transform: scale(1.1);
   background-color: lightseagreen;
   font-weight: 600;
-  width: 110px;
+  width: 130px;
   height: 50px;
 
-}
+} */
