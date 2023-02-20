@@ -15,21 +15,13 @@ const AreaOfBooking = () => {
   const [gender, setGender] = useState("");
   const [passengerList, setPassengerList] = useState([]);
   const [windowSeats, setWindowSeats] = useState([
-    "W1",
-    "W2",
-    "W3",
-    "W4",
-    "W5",
+   "1","7","13","19","25","6","12","18","24","30"
   ]);
   const [middleSeats, setMiddleSeats] = useState([
-    "M1",
-    "M2",
-    "M3",
-    "M4",
-    "M5",
+   "2","8","14","20","26","5","11","17","23","29"
   ]);
   const [aisleSeats,setAisleSeats] = useState([
-    "A1","A2","A3","A4","A5","A6","A7","A8","A9","A10","A11","A12","A13","A14","A15","A16","A17","A18","A19","A20",
+    "3","9","15","21","27","4","10","16","22","28"
   ])
 
   const [booking, setBooking] = useState(false);
@@ -44,11 +36,11 @@ const AreaOfBooking = () => {
   const passangerHandler = (e) => {
     e.preventDefault();
     let availableSeats;
-    if (age > 60) {
-      if (gender === "Female") {
+    if (age > 60 && gender === "Female")   {
+      {
         availableSeats = windowSeats.filter(
           (seat) => !passengerList.some((p) => p.seat === seat)
-        );
+        )
       }
       if (availableSeats.length === 0) {
         availableSeats = middleSeats.filter(
