@@ -168,9 +168,12 @@ const AreaOfBooking = () => {
               <span></span>
               Book Tickets
             </button>
+       <span className="hr"></span> 
           </form>
+         
         </div>
-        <hr />
+        <span className="bhr"></span>
+       
         <div className="bottom-container">
           <ul className="ul-con">
             {passengerList.map((passanger) => (

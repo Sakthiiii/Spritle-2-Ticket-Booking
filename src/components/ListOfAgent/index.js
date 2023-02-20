@@ -65,7 +65,7 @@ const AgentList = (props) => {
     return (
       <div className="agentItem-container">
         <ul className="ul">
-          <h1 className="agent-heading"> List Of Agent</h1>
+          <h1 className="agent-heading">  Agent List</h1>
           {array &&
             array.map((item) => (
               <AgentList key={item.id} user={item} 

@@ -172,11 +172,11 @@ const ViewArea = () => {
           <button className="btns" type="submit" >
          <span> Add Agent </span>  
           </button>
-        <span className="bhr"></span>
+        <span className="bhrr"></span>
 
         </form>
  
- <span className="hr"></span>
+ <span className="hrr"></span>
 
         <List />
       </div>
