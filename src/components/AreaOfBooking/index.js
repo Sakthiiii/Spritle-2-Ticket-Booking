@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
-
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 import LogoutIcon from '@mui/icons-material/Logout';
 import { v4 } from "uuid";
 //import Ticket from "../Ticket"
@@ -35,14 +36,19 @@ const AreaOfBooking = () => {
   }
   const passangerHandler = (e) => {
     e.preventDefault();
+
+
     let availableSeats;
+  
     if (age > 60 && gender === "Female")   {
-      {
         availableSeats = windowSeats.filter(
           (seat) => !passengerList.some((p) => p.seat === seat)
         )
-      }
-      if (availableSeats.length === 0) {
+        if(name ==="" || age ==="" || gender===""  ){
+      toast("Please fill all the forms");
+
+    }
+      if (availableSeats >30 && gender ==="Female && Male") {
         availableSeats = middleSeats.filter(
           (seat) => !passengerList.some((p) => p.seat === seat)
         );
@@ -61,7 +67,7 @@ const AreaOfBooking = () => {
         (seat) => !passengerList.some((p) => p.seat === seat)
        );
     }
-
+    
     let allocatedseat;
 
     if (passengerList.length > 0) {
